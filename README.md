@@ -224,9 +224,8 @@ printf("The value of P : %lld\n", P);
 printf("Enter the value of G:");
 scanf("%lld",&G); // A primitive root for P, G is taken
 printf("The value of G : %lld\n\n", G);
-// Alice will choose the private key a
 a = 4; // a is the chosen private key
-printf("The private key a for Alice : %lld\n", a);
+printf("The private key a for Raghul: %lld\n", a);
 x = power(G, a, P); // gets the generated key
 // Bob will choose the private key b
 b = 3; // b is the chosen private key
@@ -236,14 +235,14 @@ y = power(G, b, P); // gets the generated key
 // of keys
 ka = power(y, a, P); // Secret key for Alice
 kb = power(x, b, P); // Secret key for Bob
-printf("Secret key for the Alice is : %lld\n", ka);
+printf("Secret key for the Raghul is : %lld\n", ka);
 printf("Secret Key for the Bob is : %lld\n", kb);
 return 0;
 }
 ```
 ## OUTPUT:
+![image](https://github.com/Raghulshanmugam2004/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/119561118/fa184b7b-9e65-4fea-abc0-df8c4c498ad3)
 
-<img width="342" alt="image" src="https://github.com/AlluguriSrikrishnateja/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/118343892/a3f5b0fa-ef81-4215-9521-2a16c87cef68">
 
 
 ## RESULT: 
