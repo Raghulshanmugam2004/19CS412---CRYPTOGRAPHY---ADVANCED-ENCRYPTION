@@ -181,18 +181,18 @@ To implement the Diffie-Hellman Key Exchange algorithm using C language.
 
 ## ALGORITHM:
 
-STEP-1: Both Alice and Bob shares the same public keys g and p.
+STEP-1: Both Raghul and Bob shares the same public keys g and p.
 
-STEP-2: Alice selects a random public key a.
+STEP-2: Raghul selects a random public key a.
 
-STEP-3: Alice computes his secret key A as g
+STEP-3: Raghul computes his secret key A as g
 a mod p.
 
-STEP-4: Then Alice sends A to Bob.
+STEP-4: Then Raghul sends A to Bob.
 
 
 STEP-5: Similarly Bob also selects a public key b and computes his secret
-key as B and sends the same back to Alice.
+key as B and sends the same back to Raghul.
 
 
 STEP-6: Now both of them compute their common secret key as the other
