@@ -181,18 +181,18 @@ To implement the Diffie-Hellman Key Exchange algorithm using C language.
 
 ## ALGORITHM:
 
-STEP-1: Both Raghul and Bob shares the same public keys g and p.
+STEP-1: Both Alice and Bob shares the same public keys g and p.
 
-STEP-2: Raghul selects a random public key a.
+STEP-2: Alice selects a random public key a.
 
-STEP-3: Raghul computes his secret key A as g
+STEP-3: Alice computes his secret key A as g
 a mod p.
 
-STEP-4: Then Raghul sends A to Bob.
+STEP-4: Then Alice sends A to Bob.
 
 
 STEP-5: Similarly Bob also selects a public key b and computes his secret
-key as B and sends the same back to Raghul.
+key as B and sends the same back to Alice.
 
 
 STEP-6: Now both of them compute their common secret key as the other
@@ -223,8 +223,9 @@ printf("The value of P : %lld\n", P);
 printf("Enter the value of G:");
 scanf("%lld",&G); // A primitive root for P, G is taken
 printf("The value of G : %lld\n\n", G);
+// Alice will choose the private key a
 a = 4; // a is the chosen private key
-printf("The private key a for Raghul: %lld\n", a);
+printf("The private key a for Alice : %lld\n", a);
 x = power(G, a, P); // gets the generated key
 // Bob will choose the private key b
 b = 3; // b is the chosen private key
@@ -234,21 +235,20 @@ y = power(G, b, P); // gets the generated key
 // of keys
 ka = power(y, a, P); // Secret key for Alice
 kb = power(x, b, P); // Secret key for Bob
-printf("Secret key for the Raghul is : %lld\n", ka);
+printf("Secret key for the Alice is : %lld\n", ka);
 printf("Secret Key for the Bob is : %lld\n", kb);
 return 0;
 }
 ```
 ## OUTPUT:
-![image](https://github.com/Raghulshanmugam2004/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/119561118/fa184b7b-9e65-4fea-abc0-df8c4c498ad3)
 
+<img width="342" alt="image" src="https://github.com/AlluguriSrikrishnateja/19CS412---CRYPTOGRAPHY---ADVANCED-ENCRYPTION/assets/118343892/a3f5b0fa-ef81-4215-9521-2a16c87cef68">
 
 
 ## RESULT: 
 
 Thus the Diffie-Hellman key exchange algorithm had been successfully
 implemented using C.
-
 
 
 
